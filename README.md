@@ -4,15 +4,19 @@ Determines if a webpage visitor comes from Facebook web/app or Instagram web/app
 
 ## How to test it
 
-Access the suggested post and should be able to see the below image.
+Access the suggested post and should be able to see what is described below.
 
 ### Facebook
 
 [https://www.facebook.com/taltk9/posts/10213069861895165](https://www.facebook.com/taltk9/posts/10213069861895165)
 
+**Facebook card**
+
 ### Instagram [doesn't work for while]
 
 [https://www.instagram.com/p/B3Kr6egBkuN/](https://www.instagram.com/p/B3Kr6egBkuN/)
+
+**Instagram card**
 
 ### Twitter
 
