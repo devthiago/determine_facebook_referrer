@@ -15,7 +15,7 @@
       <p class="card-text">
         You came from Facebook to visit this web page.
       </p>
-      <a href="facebook.com" class="btn btn-primary">Go to Facebook</a>
+      <a target="_blank" href="facebook.com" class="btn btn-primary">Go to Facebook</a>
     </div>
   </div>
   <div id="facebook-app" class="card hide" style="width: 18rem;">
@@ -24,7 +24,7 @@
       <p class="card-text">
         You came from Facebook to visit this web page.
       </p>
-      <a href="facebook.com" class="btn btn-primary">Go to Facebook</a>
+      <a target="_blank" href="facebook.com" class="btn btn-primary">Go to Facebook</a>
     </div>
   </div>
   <div id="instagram-web" class="card hide" style="width: 18rem;">
@@ -33,7 +33,7 @@
       <p class="card-text">
         You came from Instagram to visit this web page.
       </p>
-      <a href="instagram.com" class="btn btn-primary">Go to Instagram</a>
+      <a target="_blank" href="instagram.com" class="btn btn-primary">Go to Instagram</a>
     </div>
   </div>
   <div id="instagram-app" class="card hide" style="width: 18rem;">
@@ -42,19 +42,20 @@
       <p class="card-text">
         You came from Instagram to visit this web page.
       </p>
-      <a href="instagram.com" class="btn btn-primary">Go to Instagram</a>
+      <a target="_blank" href="instagram.com" class="btn btn-primary">Go to Instagram</a>
     </div>
   </div>
   <script type="text/javascript" src="index.js" />
   <script type="text/javascript">
-    (function() {
+    window.addEventListener('load', () => {
+      console.log('READY');
       trackFacebookVisitor(referrer => {
         document
           .getElementById(referrer)
           .classList
           .remove('hide');
       });
-    })();
+    });
   </script>
 </body>
 </html>
