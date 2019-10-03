@@ -49,9 +49,8 @@
   <script type="text/javascript">
     (function() {
       trackFacebookVisitor(referrer => {
-        console.log(referrer);
         document
-          .getElementById(referrer);
+          .getElementById(referrer)
           .classList
           .remove('hide');
       });

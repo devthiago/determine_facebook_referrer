@@ -7,8 +7,9 @@ function trackFacebookVisitor(cb) {
   const isInstagramApp = ua.indexOf('Instagram') > -1;
   const isInstagram = rf.indexOf('instagram') > -1;
   
-  if (isFacebook) cb('facebook-web');
-  if (isFacebookApp) cb('facebook-app');
-  if (isInstagram) cb('instagram-web'); 
-  if (isInstagramApp) cb('instagram-app');
+  if (isFacebook) return cb('facebook-web');
+  if (isFacebookApp) return cb('facebook-app');
+  if (isInstagram) return cb('instagram-web'); 
+  if (isInstagramApp) return cb('instagram-app');
+  return cb(undefined);
 }
