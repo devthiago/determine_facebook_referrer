@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Determine Facebook/Instagram referrer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style type="text/css">
+    .hide { display: none; }
+  </style>
+</head>
+<body>
+  <div id="facebook-web" class="card hide" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Facebook (Web)</h5>
+      <p class="card-text">
+        You came from Facebook to visit this web page.
+      </p>
+      <a href="facebook.com" class="btn btn-primary">Go to Facebook</a>
+    </div>
+  </div>
+  <div id="facebook-app" class="card hide" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Facebook (App)</h5>
+      <p class="card-text">
+        You came from Facebook to visit this web page.
+      </p>
+      <a href="facebook.com" class="btn btn-primary">Go to Facebook</a>
+    </div>
+  </div>
+  <div id="instagram-web" class="card hide" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Instagram (Web)</h5>
+      <p class="card-text">
+        You came from Instagram to visit this web page.
+      </p>
+      <a href="instagram.com" class="btn btn-primary">Go to Instagram</a>
+    </div>
+  </div>
+  <div id="instagram-app" class="card hide" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Instagram (App)</h5>
+      <p class="card-text">
+        You came from Instagram to visit this web page.
+      </p>
+      <a href="instagram.com" class="btn btn-primary">Go to Instagram</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="index.js" />
+  <script type="text/javascript">
+    (function() {
+      trackFacebookVisitor(referrer => {
+        document
+          .getElementById(referrer);
+          .classList
+          .remove('hide');
+      });
+    })();
+  </script>
+</body>
+</html>
